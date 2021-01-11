@@ -11,38 +11,61 @@
 <body>
     
     <!-- navbar -->
-    <section id="navbar">
-            <nav class="navbar">
+            <nav id="navbar">
                 <div class="navbar__logo">
-                    chanwoo
+                    <a href="#" class="navbar__title">chanwoo</a>  
                 </div>
                 <ul class="navbar__menu">
-                    <li class="navbar__item">Home</li>
+                    <li class="navbar__item active">Home</li>
                     <li class="navbar__item">About</li>
                     <li class="navbar__item">Skill</li>
                     <li class="navbar__item">Project</li>
                     <li class="navbar__item">Contact</li>
                 </ul>
             </nav>
-    </section>
+    
         
             
 
     <!-- home -->
     <section id="home">
+        <div class="homebg__dark"></div>
+        <h2 class="home__title">안녕하세요. 프론트엔드 개발자 허찬우입니다.</h2>
+        <h3 class="home__description">끝없는 배움과 끈기있는 노력.</h3>
         <button class="home__contact">Contact Me</button>
     </section>
     
     <!-- about -->
     <section id="about">
-        <div class="avatar"></div>
-        <div class="avatar__description"></div>
+        <h2 class="about__title">About me</h2>
+        <div class="about__avatar">
+            <div class="avatar">
+                <img src="img/avatar.jpeg" alt="" class="avatar__img">
+            </div>
+            <div class="avatar__description">
+                <div class="avatar__degree">
+                    <!-- 가상클래스 before, after -->
+                    <p class="degree">2014.03~2019.02 동서울대학교 졸업</p>
+                    <p class="degree">2019.03~2020.02 동서울대학교 학사졸업</p>
+                    
+                </div>
+                <div class="avatar__certification">
+                    <p class="certification">정보처리기사</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- skill -->
     <section id="skill">
-        <div class="skills">
-
+        <div class="skillset">
+            <div class="skill">
+                <h2 class="skill__title">Frontend</h2>
+                <div class="skill__item">
+                    <span class="skill__name">html</span>
+                    <i class="fab fa-html5"></i>
+                </div>
+            </div>
         </div>
     </section>
 
