@@ -16,27 +16,33 @@
                     <a href="#" class="navbar__title">chanwoo</a>  
                 </div>
                 <ul class="navbar__menu">
-                    <li class="navbar__item active">Home</li>
-                    <li class="navbar__item">About</li>
-                    <li class="navbar__item">Skill</li>
-                    <li class="navbar__item">Project</li>
-                    <li class="navbar__item">Contact</li>
+                    <li class="navbar__item active" data-link="#home">Home</li>
+                    <li class="navbar__item" data-link="#about">About</li>
+                    <li class="navbar__item" data-link="#skill">Skill</li>
+                    <li class="navbar__item" data-link="#project">Project</li>
+                    <li class="navbar__item" data-link="#contact">Contact</li>
                 </ul>
             </nav>
     
+    <!-- toggle -->
+    <button class="toggleBtn active">
+        <i class="fas fa-bars"></i>
+    </button>
         
             
 
     <!-- home -->
-    <section id="home">
-        <div class="homebg__dark"></div>
-        <h2 class="home__title">안녕하세요. 프론트엔드 개발자 허찬우입니다.</h2>
-        <h3 class="home__description">끝없는 배움과 끈기있는 노력.</h3>
-        <button class="home__contact">Contact Me</button>
+    <section id="home" class="section">
+        <div class="home__container">
+
+            <h2 class="home__title">안녕하세요. 프론트엔드 개발자 허찬우입니다.</h2>
+            <h3 class="home__description">끝없는 배움과 끈기있는 노력.</h3>
+            <button class="home__contact">Contact Me</button>
+        </div>
     </section>
     
     <!-- about -->
-    <section id="about">
+    <section id="about" class="section">
         <h2 class="about__title">About me</h2>
         <div class="about__avatar">
             <div class="avatar">
@@ -58,50 +64,64 @@
     </section>
 
     <!-- skill -->
-    <section id="skill">
-        <h2>Skill</h2>
+    <section id="skill" class="section">
+        <h2>Skills</h2>
         <div class="skillset">
             <div class="skill">
                 <h3 class="skill__title">Frontend</h3>
-                <div class="skill__item">
-                    <img src="img/html.png" alt="" class="skill__img">
-                    <span class="skill__description">html</span>
-                </div>
-                <div class="skill__item">
-                    <img src="img/css.png" alt="" class="skill__img">
-                    <span class="skill__description">css</span>
-                </div>
-                <div class="skill__item">
-                    <img src="img/javascript.png" alt="" class="skill__img">
-                    <span class="skill__description">javascript</span>
-                </div>
-                <div class="skill__item">
-                    <img src="img/react.png" alt="" class="skill__img">
-                    <span class="skill__description">react</span>
+                <div class="skill__container">
+                    <div class="skill__item">
+                        <img src="img/html.png" alt="" class="skill__img">
+                        <span class="skill__description">HTML</span>
+                    </div>
+                    <div class="skill__item">
+                        <img src="img/css.png" alt="" class="skill__img">
+                        <span class="skill__description">CSS</span>
+                    </div>
+                    <div class="skill__item">
+                        <img src="img/javascript.png" alt="" class="skill__img">
+                        <span class="skill__description">Javascript</span>
+                    </div>
+                    <div class="skill__item">
+                        <img src="img/react.png" alt="" class="skill__img">
+                        <span class="skill__description">React</span>
+                </div> 
                 </div>
             </div>
-             <div class="skill">
+             <div class="skill line">
                 <h3 class="skill__title">Backend</h3>
+                <div class="skill__container">
                 <div class="skill__item">
                     <img src="img/nodejs.png" alt="" class="skill__img">
                     <span class="skill__description">nodeJS</span>
                 </div>
+                </div>
             </div>
              <div class="skill">
                 <h3 class="skill__title">etc</h3>
+                <div class="skill__container">
+
+                    <div class="skill__item">
+                        <img src="img/git.png" alt="" class="skill__img">
+                        <span class="skill__description">Git</span>
+                    </div>
                 <div class="skill__item">
                     <img src="img/github.png" alt="" class="skill__img">
                     <span class="skill__description">Github</span>
+                </div>
+                <div class="skill__item">
+                    <img src="img/webpack.png" alt="" class="skill__img">
+                    <span class="skill__description">Webpack</span>
+                </div>
                 </div>
             </div>
             
 
         </div>
-
     </section>
 
     <!-- project -->
-    <section id="project">
+    <section id="project" class="section">
         <h2>Project</h2>
         <div class="project__categories">
             <button class="categories__btn active">All <span class="categories__count">8</span></button>
@@ -173,7 +193,7 @@
     </section>
 
     <!-- contact -->
-    <section id="contact">
+    <section id="contact" class="section">
             <div class="contact__email">
                 <i class="far fa-envelope"></i>
                 <span class="email">cksdndbd95@gmail.com</span>
@@ -182,6 +202,11 @@
             <p class="copyright">Copyrightⓒ2021. HeoChanWoo all right reserved.</p>
     
     </section>
+
+    <!-- arrow-up -->
+    <button class="arrow-up">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
         
     
