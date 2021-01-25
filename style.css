@@ -63,13 +63,20 @@ button {
 
 
 #navbar {
-    
+    position:fixed;
     display:flex;
+    width:100%;
     padding: 14px;
     justify-content: space-between;
     align-items: center;
-    background-color:#222831;
+    background-color:transparent;
     color:white;
+    transition: all 0.2s ease-in;
+    z-index:1000;
+}
+
+#navbar.navbar--dark {
+    background-color:#222831;
 }
 
 .navbar__logo {
@@ -80,6 +87,7 @@ button {
 .navbar__menu {
     display:flex;
     margin-right:32px;
+    transition: all 0.2s ease-in;
 }
 
 .navbar__item {
@@ -99,7 +107,7 @@ button {
   
 }
 
-#home {
+.bg__container {
     background: url('img/backgroundcv.jpg') center/cover no-repeat;
 
 }
@@ -351,7 +359,7 @@ button {
 .toggleBtn {
     position:absolute;
     top:22px;
-    right:18px;
+    right:40px;
     color:white;
     border:none;
     font-size:24px;
@@ -360,13 +368,21 @@ button {
 
 .arrow-up {
     position:fixed;
-    right:20px;
-    bottom:20px;
+    right:30px;
+    bottom:50px;
     font-size:34px;
     border:1px solid black;
     border-radius:50%;
     background-color:#222831;
     color:white;
+    visibility: hidden;
+    transition:all 0.2s ease-in;
+}
+
+.arrow-up.visible {
+    visibility:visible;
+    transition:all 0.2s ease-in;
+
 }
 
 
@@ -375,19 +391,26 @@ button {
 
     #navbar {
         flex-direction:column;
+        
     }
 
     .navbar__logo {
         margin-left:-4px;
         
+        
     }
 
     .navbar__menu {
         display:none;
+        transition: all 0.2s ease-in;
+       
     }
 
     .navbar__menu.visible {
         display:block;
+        margin:0;
+        padding:0;
+        background-color: black;
     }
 
     .navbar__item.active,
