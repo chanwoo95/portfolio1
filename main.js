@@ -56,11 +56,35 @@ arrowUpBtn.addEventListener('click', () => {
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
 
-console.log(homeHeight);
-console.log(window.scrollY);
+
 
 // 2. 홈화면보다 작아지면 투명도 희미
 
 document.addEventListener('scroll', () => {
     home.style.opacity = 1 - ( window.scrollY / homeHeight);
+})
+
+
+ // 최상단 화면에서 밑으로 스크롤 시 네비게이션 바 고정
+
+ const navbar = document.querySelector('#navbar');
+ const navbarHeight = navbar.getBoundingClientRect().height;
+
+ document.addEventListener('scroll', () => {
+     if( window.scrollY > navbarHeight) {
+         navbar.classList.add('navbar--dark');
+     } else {
+         navbar.classList.remove('navbar--dark');
+     }
+    console.log('navbarHeight:',window.scrollY, navbarHeight);
+ });
+
+//  일정이상 밑으로 화면 스크롤 시 arrow-up버튼 활성화
+
+document.addEventListener('scroll', () => {
+    if( window.scrollY > homeHeight) {
+        arrowUpBtn.classList.add('visible');
+    } else {
+        arrowUpBtn.classList.remove('visible');
+    }
 })
