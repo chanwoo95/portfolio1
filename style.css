@@ -366,6 +366,16 @@ button {
     display:none;
 }
 
+.fas.fa-times {
+    display:none;
+}
+
+.toggleBtn.active.show {
+    display:none;
+}
+
+
+
 .arrow-up {
     position:fixed;
     right:30px;
@@ -377,11 +387,13 @@ button {
     color:white;
     visibility: hidden;
     transition:all 0.2s ease-in;
+    opacity: 0;
 }
 
 .arrow-up.visible {
     visibility:visible;
     transition:all 0.2s ease-in;
+    opacity: 1;
 
 }
 
