@@ -44,7 +44,7 @@ contactBtn.addEventListener('click', () => {
 const arrowUpBtn = document.querySelector('.arrow-up');
 
 arrowUpBtn.addEventListener('click', () => {
-    const scrollTo = document.querySelector('#navbar');
+    const scrollTo = document.querySelector('#home');
     scrollTo.scrollIntoView({ behavior: "smooth", block: "center" });
 })
 
@@ -76,7 +76,7 @@ document.addEventListener('scroll', () => {
      } else {
          navbar.classList.remove('navbar--dark');
      }
-    console.log('navbarHeight:',window.scrollY, navbarHeight);
+   
  });
 
 //  일정이상 밑으로 화면 스크롤 시 arrow-up버튼 활성화
@@ -88,3 +88,13 @@ document.addEventListener('scroll', () => {
         arrowUpBtn.classList.remove('visible');
     }
 })
+
+// toggle버튼 클릭시 toggle버튼 변환
+
+toggleBtn.addEventListener('click', toggleMenuIcon);
+
+function toggleMenuIcon() {
+    toggleBtn.classList.toggle('show');
+    toggleBtn.classList.toggle('close');
+    
+}
