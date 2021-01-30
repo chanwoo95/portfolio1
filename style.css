@@ -421,13 +421,19 @@ button {
        
     }
         
+    .title {
+        margin:0;
+    }
 
     #skill {
         padding:0;
+        box-sizing:border-box;
+
     }
 
     .skill {
         margin:auto;
+        height:200px;
     }
     .skillset {
         flex-direction: column;
