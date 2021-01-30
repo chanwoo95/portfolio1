@@ -12,12 +12,11 @@
 
 * {
     font-family: 'Roboto', sans-serif;
-    
+    box-sizing: border-box;
 }
 
 
 body {
-    box-sizing: border-box;
     margin:0;
     width:100%;
     height:100%;
@@ -31,12 +30,6 @@ h2 {
     margin-top:20px;
 }
 
-
-
-#home h2,h3,button {
-    position:relative;
-    z-index:1000;
-}
 
 a {
     color:white;
@@ -104,7 +97,6 @@ button {
     background-color:white;
     color:black;
     transition:0.2s;
-  
 }
 
 .bg__container {
@@ -169,10 +161,12 @@ button {
 #skill {
     max-width:1200px;
     margin:auto;
+    background-color: #dddddd;
 }
 
 .skillset {
     display:flex;
+    
 }
 
 .skill {
@@ -221,7 +215,9 @@ button {
 
 
 .project__categories {
+    position: relative;
     margin-top:14px;
+    z-index:0;
     
 }
 
@@ -359,7 +355,7 @@ button {
 .toggleBtn {
     position:absolute;
     top:22px;
-    right:40px;
+    right:20px;
     color:white;
     border:none;
     font-size:24px;
@@ -373,7 +369,6 @@ button {
 .toggleBtn.active.show {
     display:none;
 }
-
 
 
 .arrow-up {
@@ -394,7 +389,6 @@ button {
     visibility:visible;
     transition:all 0.2s ease-in;
     opacity: 1;
-
 }
 
 
@@ -403,42 +397,38 @@ button {
 
     #navbar {
         flex-direction:column;
-        
+        align-items: flex-start;
     }
 
     .navbar__logo {
         margin-left:-4px;
-        
-        
     }
 
     .navbar__menu {
         display:none;
+        flex-direction:column;
+        text-align:center;
+        width:100%;
         transition: all 0.2s ease-in;
-       
+
     }
 
     .navbar__menu.visible {
         display:block;
-        margin:0;
         padding:0;
-        background-color: black;
+        margin:0;
+        margin-top:12px;
+       
     }
-
-    .navbar__item.active,
-    .navbar__item:hover {
-        width:400px;
-    }
+        
 
     #skill {
         padding:0;
     }
 
-    .skill.line {
-        border:none;
+    .skill {
+        margin:auto;
     }
-
-    
     .skillset {
         flex-direction: column;
     }
