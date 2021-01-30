@@ -91,10 +91,3 @@ document.addEventListener('scroll', () => {
 
 // toggle버튼 클릭시 toggle버튼 변환
 
-toggleBtn.addEventListener('click', toggleMenuIcon);
-
-function toggleMenuIcon() {
-    toggleBtn.classList.toggle('show');
-    toggleBtn.classList.toggle('close');
-    
-}
