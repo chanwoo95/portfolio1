@@ -100,7 +100,7 @@ const sections = sectionIds.map((id) => document.querySelector(id));
 const observerOptions = {
     root: null,
     rootMargin: '0px',
-    treshold: 0.4,
+    treshold: 0.3,
 };
 
 const observerCallback = (entries, observer) => {
