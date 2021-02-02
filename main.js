@@ -91,6 +91,8 @@ document.addEventListener('scroll', () => {
 
 const sectionIds = ['#home', '#about', '#skill', '#project', '#contact'];
 
+let sectionNavItem = [navItems[0]];
+
 const navItems = sectionIds.map((id) =>
     document.querySelector(`[data-link="${id}"]`),
 );
