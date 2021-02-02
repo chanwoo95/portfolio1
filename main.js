@@ -105,7 +105,7 @@ const observerOptions = {
 
 const observerCallback = (entries, observer) => {
     entries.forEach((entry) => {
-        if (entry.isIntersecting) {
+        if (!entry.isIntersecting) {
         }
     });
 };
